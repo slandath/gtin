@@ -1,41 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>GTIN Tools</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fahrenheit Converter</title>
+    <link href="style.css" rel="stylesheet" />
 </head>
-
-
 
 <body>
     <div class="container">
-        <h1>Check Digit Calculator</h1>
-        <div class="explain-container">
-            <p>The last digit of a Global Trade Item Number is called a check digit. Just like a UPC, the check digit
-                allows
-                for an
-                alorithm to check the accuracy of the barcode.</p>
-            <br>
-            <p>Enter the first 11 or 13 digits of a GTIN and select 'Calculate' to see the correct check digit.</p>
-        </div>
-        <form>
-            <div class="form-container">
-                <label for="gtinInput" class="label">First 11 or 13 GTIN digits</label>
-                <input type="text" id="gtinInput" class="input" maxlength="13">
-                <input type="submit" id="btnForm" class="btn" value="Calculate">
-        </form>
-    </div>
-    <div class="hidden" id="resultDiv">
-        <h3>Check Digit</h3>
-        <p id="checkDigit" class="result"></p>
-        <div class="hidden" id="gtinResultDiv">
-            <h3>Complete GTIN</h3>
-            <p id="gtin" class="result"></p>
-        </div>
-    </div>
+        <h1>Fahrenheit Converter</h1>
+        <input type="number" class="input" id="degrees" min="-50" max="115" value="72" />
+        <p id="finalTemp" class="results"></p>
     </div>
     <script src="app.js"></script>
 </body>
